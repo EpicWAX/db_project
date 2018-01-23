@@ -8,10 +8,17 @@
 
 /* Début de Body */
 
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+}
+
 /* Début de la Navbar */
-.topnav {
+
+  .topnav {
     overflow: hidden;
     background-color: #333;
+    padding-left: 49%;
   }
   
   .topnav a {
@@ -67,10 +74,38 @@
 
 /* Fin de la Navbar */
 
+.titles {
+  text-align: center;
+  margin-top: 8%;
+}
+
+#ouvrir {
+  background-color: #4CAF50;
+  height: 200px;
+  width: 24%;
+}
+
+#association {
+  display: flex;
+  margin-top: 8%;
+  margin-left: 20%;
+}
+
+#ouvrir2 {
+  background-color: red;
+  height: 200px;
+  width: 24%;
+  margin-left: 26%;
+}
+
+span {
+  padding-left: 36%;
+}
+
 /* Début de la Div Main_contain */
 
 h2 {
-  padding-top: 20%;
+  padding-top: 6%;
 }
 
 #main_contain {
@@ -82,14 +117,14 @@ h2 {
 
 #cadre {
   text-align: center;
-  padding-top: 16%;
+  padding-top: 7%;
 }
 
 /* Fin de la Div cadre */
 
 /* Début de la Div wine */
 
-#wine {
+#bouton_texte {
   background-color: #4CAF50;
   height: 200px;
   width: 66%;
@@ -101,12 +136,21 @@ h2 {
 
 /* Début de la Div dishes */
 
+/* #sidebar {
+  position: absolute;
+  right:0;
+  top:49px;
+  width:50%;
+  height:100%;
+  background:white;
+}*/
+
 #dishes {
   background-color: white;
   height: 200px;
   width: 66%;
   margin-left: 16%;
-  margin-top: 22%;
+  margin-top: 10%;
   text-align: center;
 }
 
@@ -130,5 +174,111 @@ footer {
 }
 
 /* Fin du Footer */
+
+/* Début de la div sidebar */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  /*z-index: 1;*/
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+#sidebar_content {
+  background-color: none;
+  margin-top: 10%;
+  color: white;
+}
+
+#sidebar_content2 {
+  background-color: none;
+  color: white;
+  margin-top: 40%;
+}
+
+.vin {
+  padding: 16px 14px 20px 14px;
+  text-decoration: none;
+  font-size: 14px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.cru {
+  padding: 16px 14px 20px 14px;
+  text-decoration: none;
+  font-size: 14px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 80px 20px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.button5 {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+  border-radius: 25px;
+}
+
+.button5:hover {
+  background-color: #555555;
+  color: white;
+  border-radius: 25px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* Fin de la div sidebar */
 
 /* Fin de Body */
