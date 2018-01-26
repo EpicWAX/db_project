@@ -73,7 +73,7 @@ body {
 /* Début css du Bouton "Voir les Résultats" */
 
 .button {
-  background-color: #9E0E40; /* Bordeau */
+  background-color: #9E0E40; /* Green */
   border: none;
   color: white;
   padding: 16px 32px;
@@ -106,7 +106,7 @@ body {
 /* Début de la div sidenav */
 
 .sidenav a {
-  padding: 8px 8px 8px 26px;
+  padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
   color: #818181;
@@ -145,8 +145,6 @@ body {
 
 .logo {
   margin-left: -94%;
-  width: 20%;
-  height: 20px;
 }
 
 .topnav {
@@ -211,150 +209,80 @@ body {
 
 /* Fin de la div main */
 
-/* Début de la div about */
+/* Début de la div page2_content */
 
-#about {
-  width: 72%;
-  margin-top: 1%;
-  margin-left: 14%;
-}
+/* Début de la div flex_div */
 
-#about p {
-  text-align: center;
-  color: black;
-  border: solid 2px white;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-/* Fin de la div about */
-
-/* Début la div Container = Formulaire de contact */
-
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type=submit] {
-  background-color: #9E0E40;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #9E0E40;
-}
-.container {
-  padding: 20px;
-  width: 50%;
-  margin-top: 6%;
-  margin-left: 24%;
-  border: solid 1px white;
-}
-
-h5, .container p {
-  text-align: center;
-}
-
-/* Fin la div Container = Formulaire de contact */
-
-/* Début de la div test */
-
-  #rond {
+#flex_div {
     display: flex;
-    margin-top: 18%;
-    margin-left: 13%;
-  }
+    margin-top: 6%;
+}
+/* Début de la div ttlescadres */
 
-  h6 {
-    color: black;
+#ttlescadres {
+    width: 50%;
+    flex-wrap: wrap;
+    display: flex;
     margin-left: 1%;
-  }
-
-  #test {
-    background-color: #9E0E40;
-    width: 10%;
-    height: 150px;
-  }
-
-  #test2 {
-    background-color: #333;
-    width: 10%;
-    height: 150px;
-  }
-
-  #test3 {
-    background-color: #9E0E40;
-    width: 10%;
-    height: 150px;
-  }
-
-  .deux {
-    margin-left: 12%;
-  }
-
-/* Fin de la div test */
-
-/* Début de la div titles */
-
-.titles {
-  text-align: center;
-  margin-top: 8%;
 }
 
-/* Fin de la div association */
+/* Début de la div grand_cadre */
 
-/* Début de la div association */
+#grand_cadre {
+    background-color: #9E0E40;
+    height: 600px;
+    width: 40%;
+    margin-top: 7%;
+    margin-left: 5%;
+    display: flex;
+}
 
-#association {
+/* Fin de la div grand_cadre */
+
+/* Début de la div content_cadre */
+
+
+#cadre1 {
   display: flex;
-  margin-top: 8%;
-  margin-left: 20%;
+  flex-wrap: wrap;
 }
 
-/* Début de la div ouvrir */
+#sansnom {
+  width: 33%;
+  margin-top: -6%;
+}
 
-#ouvrir {
-  background-color: #9E0E40;
+.carre {
   height: 200px;
-  width: 24%;
+  margin-left: 2%;
 }
 
-/* Fin de la div ouvrir */
-
-/* Début de la div ouvrir2 */
-
-#ouvrir2 {
-  background-color: #9E0E40;
-  height: 200px;
-  width: 24%;
-  margin-left: 26%;
+h3 {
+  margin-left: 31%;
 }
 
-span {
-  padding-left: 43%;
+h4 {
+  margin-left: 30%;
+  font-size: 20px;
 }
 
-/* Fin de la div ouvrir2 */
-
-/* Fin de la div association */
-
-/* D2but de la class images */
-
-.images {
-  margin-top: 1%;
-  width: 12%;
+#content_cadre {
+    background-color: #9E0E40;
 }
 
-/* */
+#content_cadre2, #content_cadre3, #content_cadre4 {
+    background-color: grey;
+}
+
+#content_cadre.deux, #content_cadre2.deux {
+    background-color: purple;
+}
+
+/* Fin de la div content_cadre */
+
+/* Fin de la div flex_div */
+
+/* Début de la div page2_content */
 
 /* Début du Footer */
 
