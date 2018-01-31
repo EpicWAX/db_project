@@ -8,67 +8,70 @@
     <meta name="keywords" content="HTML,CSS,Php,JavaScript, AngularJs">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>WWW</title>
-</head> <!-- Fin du Head -->
-<body> <!-- Début du Body -->
-<div id="main"> <!-- Début de la div main -->
-    <div id="navbar"> <!-- Début de la div navbar -->
-        <div class="topnav"> <!-- Début de la div topnav -->
-            <a href="index.html" class="active">Home</a>
-            <a href="team.html">Equipe</a>
-            <a href="contact.html">Contact</a>
-            <a href="about.html">About</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-        </div> <!-- Fin de la div topnav -->
-    </div> <!-- Fin de la div navbar -->
-</div> <!-- Fin de la div main -->
+</head> 
+<body> 
+    <!-- navbar -->
+    <div id="main"> 
+        <div id="navbar"> 
+            <div class="topnav"> 
+                <a href="index.html" class="active">Home</a>
+                <a href="team.html">Equipe</a>
+                <a href="contact.html">Contact</a>
+                <a href="about.html">About</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            </div> 
+        </div> 
+    </div> 
 
-<div id="about"> <!-- Début de la div about -->
-    <p>
-        Informations générales sur WWW <br>
-        <br>
-        Présentation <br>
-        <br>
-        WWW est un moteur de recherche des meilleurs accords entre plats et vins (mets et vins) et vins et plats.<br>
-        <br>
-        Il est entièrement gratuit.<br>
-        <br>
-        Le moteur de recherche de WWW fonctionne dans les 2 sens :<br>
-        <br>
-            Pour un plat ou un mets, il recherche les meilleurs accords de vins.<br>
-            Pour un vin, il recherche les meilleurs accords de plats ou mets.<br>
-        <br>
-        Utilités de WWW<br>
-        <br>
-        WWW vous permet de répondre à des questions toutes simples mais que tout le monde se pose au quotidien : <br>
+    <!--Contenu div about-->
+    <div class="container" id="about"> 
+        <div class="row">
+            <div class="col-12">
+                <h1 id="main_title">What With (my) Wine?</h1>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-lg-6" id="utilite"> 
+                    <h3>Pourquoi WWW deviendra votre meilleur sommelier ou restaurateur?</h3>
+                    <p>WWW vous permet de répondre à des questions toutes simples mais que tout le monde se pose au quotidien : <br>
+                    Samedi soir je reçois mes amis à dîner, que devrai-je leur servir comme vin pour accompagner au mieux le boeuf bourguignon que je vais leur cuisiner ?<br>
+                    J'ai dans ma cave une bouteille de Pomerol qui est arrivée à maturité, avec quels plats pourrai-je le déguster pour en profiter au maximum ?<br>
+                    J'ai l'habitude de boire un Sauternes avec du foie gras, n'y aurait-il pas d'autres vins qui feraient tout aussi bien l'affaire (et peut-être même mieux) ? N'est-ce pas l'occasion de découvrir une autre association de saveurs ?
+                    </p>
+            </div> 
         
-            Samedi soir je reçois mes amis à dîner, que devrai-je leur servir comme vin pour accompagner au mieux le boeuf bourguignon que je vais leur cuisiner ?<br>
-            Et si j'ai le choix au moment de l'acheter, quel est le meilleur millésime de ce vin ces 4 dernières années ?<br>
-            J'ai dans ma cave une bouteille de Pomerol qui est arrivée à maturité, avec quels plats pourrai-je le déguster pour en profiter au maximum ?<br>
-            J'ai l'habitude de boire un Sauternes avec du foie gras, n'y aurait-il pas d'autres vins qui feraient tout aussi bien l'affaire (et peut-être même mieux) ? N'est-ce pas l'occasion de découvrir d'autres vins ?<br>
-        <br>
-        WWW n'a aucunement vocation à faire la promotion de la consommation d'alcool.<br>
-        De par sa richesse, WWW vous fera peut-être découvrir des vins que vous ne connaissiez pas et vous donnera à coup sûr des idées pour cuisiner !<br>
-        <br>
-        <br>
-        « L'abus d'alcool est dangereux pour la santé, consommez avec modération »
-        <br>
-        « Pour votre santé, mangez au moins cinq fruits et légumes par jour »,
-        <br>
-        « Pour votre santé, pratiquez une activité physique régulière »,
-        <br>
-        « Pour votre santé, évitez de manger trop gras, trop sucré, trop salé »,
-        <br>
-        « Pour votre santé, évitez de grignoter entre les repas ».
-        <br>
-        <img class ="images" src="Images/Logo.png" alt="LOGO">
-    </p>
-</div> <!-- Début de la div about -->
+            <div class="col-lg-6" id="infos"> 
+                <h3>Informations générales</h3> 
+                <p>WWW est un moteur de recherche des meilleurs accords entre plats et vins (mets et vins) et vins et plats.</p>                
+                <p>La base de données provient de la plateforme ouverte de données publiques(open datas), consultables sur <a href="https://www.data.gouv.fr/fr/"></a>data.gouv.fr</p>
+                <p>Il est entièrement gratuit et a été développé par notre équipe dans le cadre d'un projet d'études</p>
+                <p>Le moteur de recherche de WWW fonctionne dans les 2 sens :
+                Pour un plat ou un mets, il recherche les meilleurs accords de vins.<br>
+                Pour un vin, il recherche les meilleurs accords de plats ou mets.</p>
+            </div>  
 
-<footer> <!-- Début de la div Footer -->
-    <p>Mentions Légales - Réseaux sociaux - Crédits</p>
-</footer> <!-- Fin de la div Footer -->
+        </div>
+        <div class="row">
+            <div class="col-8">
+                <h3> Précautions</h3>
+                <p>WWW n'a aucunement vocation à faire la promotion de la consommation d'alcool.
+                    De par sa richesse, WWW vous fera peut-être découvrir des vins que vous ne connaissiez pas et vous donnera à coup sûr des idées pour cuisiner !
+            </div>   
+                </p>
+            <div class="col-4">
+                <img class="biglogo" src="Images/logoWWW.png" alt="Logo">
+            </div>
+        </div>
+    </div> 
+    
+    <footer> 
+        <p>Mentions Légales - Réseaux sociaux - « L'abus d'alcool est dangereux pour la santé, consommez avec modération »</p>
+    </footer> 
 
-</body> <!-- Fin du Body -->
-</html> <!-- Fin du html -->
+</body> 
+</html> 

@@ -212,15 +212,18 @@ body {
 /* Début de la div about */
 
 #about {
-  width: 72%;
-  margin-top: 1%;
-  margin-left: 14%;
+  width: 100%;
+  margin-top: 5%;
+  margin-left: 22%;
+}
+
+#about h3, #about h1 {
+  text-align: center;
 }
 
 #about p {
   text-align: center;
   color: black;
-  border: solid 2px white;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -255,10 +258,21 @@ input[type=submit]:hover {
   width: 50%;
   margin-top: 6%;
   margin-left: 24%;
-  border: solid 1px white;
 }
 
 h5, .container p {
+  text-align: center;
+}
+
+.container2 {
+  padding: 20px;
+  width: 50%;
+  margin-top: 6%;
+  margin-left: 24%;
+  border: solid 1px white;
+}
+
+.container2 p {
   text-align: center;
 }
 
@@ -269,7 +283,7 @@ h5, .container p {
   #rond {
     display: flex;
     margin-top: 18%;
-    margin-left: 13%;
+    margin-left: 26%;
   }
 
   h6 {
@@ -279,13 +293,17 @@ h5, .container p {
 
   #test {
     background-color: #9E0E40;
-    width: 10%;
+    background-image: url(Images/Whitestorks.jpeg);
+    background-size: cover;
+    width: 12%;
     height: 150px;
   }
 
   #test2 {
     background-color: #333;
-    width: 10%;
+    background-image: url(Images/Snails.jpeg);
+    background-size: cover;
+    width: 12%;
     height: 150px;
   }
 
