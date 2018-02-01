@@ -37,6 +37,7 @@ body {
 #sidebar_content {
   margin-top: 10%;
   color: white;
+  margin-left: 5%;
 }
 
 .food {
@@ -45,7 +46,6 @@ body {
 }
 
 .vin {
-  padding: 16px 14px 20px 14px;
   text-decoration: none;
   font-size: 14px;
   color: white;
@@ -61,14 +61,17 @@ body {
   background-color: none;
   color: white;
   margin-top: 24%;
+  margin-left: 6%;
 }
 
 #sidebar_content3 {
   margin-top: 20%;
+  margin-left: 4%;
 }
 
 #sidebar_content3 ul {
   color: white;
+  margin-left: 6%;
 }
 
 .cru {
@@ -225,7 +228,7 @@ body {
 
 #about {
   width: 100%;
-  margin-top: 5%;
+  margin-top: 4%;
   margin-left: 22%;
 }
 
@@ -255,7 +258,7 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-  background-color: #9E0E40;
+  background-color: grey;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -267,13 +270,20 @@ input[type=submit]:hover {
 }
 .container {
   padding: 20px;
-  width: 50%;
-  margin-top: 6%;
-  margin-left: 24%;
+  width: 60%;
+  margin-top: -1%;
+  margin-left: 22%;
+  
 }
 
 h5, .container p {
   text-align: center;
+}
+
+.container2 h5 {
+  text-transform: uppercase;
+  font-size: 16px;
+  padding-bottom: 14px;
 }
 
 .container2 {
@@ -294,29 +304,30 @@ h5, .container p {
 
   #rond {
     display: flex;
-    margin-top: 18%;
-    margin-left: 26%;
+    margin-top: 16%;
+    margin-left: 12%;
   }
 
   h6 {
     color: black;
     margin-left: 1%;
+    text-transform: uppercase;
   }
 
   #test {
     background-color: #9E0E40;
     background-image: url(Images/Whitestorks.jpeg);
     background-size: cover;
-    width: 12%;
-    height: 150px;
+    width: 20%;
+    height: 224px;
   }
 
   #test2 {
     background-color: #333;
     background-image: url(Images/Snails.jpeg);
     background-size: cover;
-    width: 12%;
-    height: 150px;
+    width: 20%;
+    height: 227px;
   }
 
   #test3 {
@@ -326,7 +337,7 @@ h5, .container p {
   }
 
   .deux {
-    margin-left: 12%;
+    margin-left: 6%;
   }
 
 /* Fin de la div test */
@@ -344,7 +355,7 @@ h5, .container p {
 
 #association {
   display: flex;
-  margin-top: 8%;
+  margin-top: 7%;
   margin-left: 20%;
 }
 
@@ -354,7 +365,9 @@ h5, .container p {
   /*background-color: #9E0E40;*/
   background-image: url(Images/wine_view.jpg);
   background-size: cover;
-  height: 200px;
+  border: solid 13px #9E0E40;
+  box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 white;
+  height: 250px;
   width: 24%;
 }
 
@@ -366,13 +379,16 @@ h5, .container p {
   /*background-color: #9E0E40;*/
   background-image: url(Images/table.jpg);
   background-size: cover;
-  height: 200px;
+  border: solid 13px white;
+  box-shadow: 0 4px 8px 0 grey, 0 6px 20px 0 grey;
+  height: 250px;
   width: 24%;
   margin-left: 26%;
 }
 
 span {
   padding-left: 43%;
+  font-weight: bold;
 }
 
 /* Fin de la div ouvrir2 */
@@ -390,26 +406,125 @@ span {
 .biglogo {
   height: 42%;
 }
-/* */
 
-/* Début du Footer */
+/*--------------------------------MENTIONS LEGALES-------------------------------------*/
 
-footer {
+/*titres*/
+h1#mentions{
+  color:#9e0e40;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 4%;
+}
+
+h2{
+  padding-bottom: 2%;
+}
+
+/*Alignements*/
+
+div.row{
+  margin-top:40px;
+}
+
+div#rang1.row{
+  margin-top: -30px;
+}
+
+div.col-12{
+  margin-bottom: -30px;
+}
+
+div#email.col-12.col-lg6{
+  text-align: justify;
+}
+
+.row{
+  padding-left: 4%;
+  padding-right: 4%;
+  margin-bottom: 50px;
+}
+
+div.row{
+  padding-left: 0%;
+}
+
+article{
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 5%;
+}
+
+p#logomention, p.m-logo, p.credits, p.credits2, p.realisation{
+  text-align: justify;
+}
+
+p.realisation{
+  padding-right: 26px;
+}
+
+footer#mentions {
   position: fixed;
   left: 0;
-  bottom: 0;
+  bottom: 0px;
   width: 100%;
   background-color: #9E0E40;
-  height: 4%;
   color: white;
   text-align: center;
-  padding-top: 1%;
+  padding-top: 20px;
+  text-decoration: none;
+  padding-bottom: 20px;
 }
 
-footer.about_footer {
-  height: auto;
+/*pour les liens*/
+a {
+  text-decoration: none;
+  color: white;
 }
 
-/* Fin du Footer */
+/*--------------------------------------PAGE ABOUT------------------------------*/
+
+img.biglogo{
+  height: 178px;
+  padding-left:12%;
+}
+
+div#about{
+ border: solid 2px white;
+}
+
+div#about.container{
+  margin-top: 50px;
+  margin-bottom: 41px;
+}
+
+h1#main_title{
+  color:#9e0e40;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 4%;
+}
+
+div#utilite.col-lg-6{
+  padding-left: 75px;
+  padding-right: 26px;
+  text-align: justify;
+}
+
+div#infos.col-lg-6{
+  padding-left: 55px;
+  padding-right: 36px;
+  text-align: justify;
+}
+
+div.col-8{
+  padding-left: 74px;
+  text-align: justify;
+}
+
+div.col-4{
+  text-align: center;
+  padding-bottom:;
+}
 
 /* Fin de Body */
