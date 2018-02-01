@@ -226,12 +226,6 @@ body {
 
 /* Début de la div about */
 
-#about {
-  width: 100%;
-  margin-top: 4%;
-  margin-left: 22%;
-}
-
 #about h3, #about h1 {
   text-align: center;
 }
@@ -255,6 +249,7 @@ input[type=text], select, textarea {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+  font-family: "Lato";
 }
 
 input[type=submit] {
@@ -268,12 +263,9 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: #9E0E40;
 }
+
 .container {
-  padding: 20px;
-  width: 60%;
-  margin-top: -1%;
-  margin-left: 22%;
-  
+  width: 66%;
 }
 
 h5, .container p {
@@ -305,7 +297,7 @@ h5, .container p {
   #rond {
     display: flex;
     margin-top: 16%;
-    margin-left: 12%;
+    margin-left: 8%;
   }
 
   h6 {
@@ -320,6 +312,8 @@ h5, .container p {
     background-size: cover;
     width: 20%;
     height: 224px;
+    border: solid 13px #9E0E40;
+    box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 white;
   }
 
   #test2 {
@@ -328,6 +322,8 @@ h5, .container p {
     background-size: cover;
     width: 20%;
     height: 227px;
+    border: solid 13px #333;
+    box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 white;
   }
 
   #test3 {
@@ -423,8 +419,12 @@ h2{
 
 /*Alignements*/
 
+div#rang2 {
+  color: white;
+}
+
 div.row{
-  margin-top:40px;
+  margin-top:20px;
 }
 
 div#rang1.row{
@@ -480,6 +480,7 @@ footer#mentions {
 a {
   text-decoration: none;
   color: white;
+  padding: 10px;
 }
 
 /*--------------------------------------PAGE ABOUT------------------------------*/
@@ -487,15 +488,6 @@ a {
 img.biglogo{
   height: 178px;
   padding-left:12%;
-}
-
-div#about{
- border: solid 2px white;
-}
-
-div#about.container{
-  margin-top: 50px;
-  margin-bottom: 41px;
 }
 
 h1#main_title{
