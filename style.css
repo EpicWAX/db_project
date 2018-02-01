@@ -386,6 +386,10 @@ span {
   width: 12%;
 }
 
+
+.biglogo {
+  height: 42%;
+}
 /* */
 
 /* Début du Footer */
@@ -400,6 +404,10 @@ footer {
   color: white;
   text-align: center;
   padding-top: 1%;
+}
+
+footer.about_footer {
+  height: auto;
 }
 
 /* Fin du Footer */
