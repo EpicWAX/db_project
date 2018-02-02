@@ -172,10 +172,6 @@ body {
   color: white;
 }
 
-.active:hover {
-  background-image: url(Images/logoWWW.png);
-}
-
 .topnav .icon {
   display: none;
 }
@@ -233,12 +229,15 @@ body {
 /* Début de la div grand_cadre */
 
 #grand_cadre {
-    background-color: #9E0E40;
-    height: 600px;
-    width: 40%;
+    /*background-color: #9E0E40;*/
+    background-image: url(Images/mosaique.jpg);
+    background-size: cover;
+    height: 604px;
+    width: 42%;
     margin-top: 7%;
     margin-left: 5%;
     display: flex;
+    box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 white;
 }
 
 /* Fin de la div grand_cadre */
@@ -249,6 +248,18 @@ body {
 #cadre1 {
   display: flex;
   flex-wrap: wrap;
+}
+
+#cadre1 ul {
+  text-decoration: none;
+  margin-left: 30%;
+  margin-bottom: 24%;
+  list-style-type: none;
+  color: #9E0E40;
+}
+
+#cadre1 ul li {
+  padding-top: 10%;
 }
 
 #sansnom {
@@ -301,6 +312,12 @@ footer#mentions{
   padding-top: 20px;
   text-decoration: none;
   padding-bottom: 20px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+    padding : 10px;
 }
 
 /* Fin du Footer */

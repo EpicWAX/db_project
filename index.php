@@ -18,18 +18,47 @@
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <div id="sidebar_content"> <!-- Début de la div sidebar_content -->
     <h1 class="vin">SELECTIONNEZ UN TYPE DE VIN:</h1>
-        <a href="index.html">Blanc</a>
-        <a href="index.html">Pétillant</a>
-        <a href="index.html">Rosé</a>
-        <a href="index.html">Rouge</a>
-  </div> <!-- Fin de la div sidebar_content -->
+    <form class="typevin" action="choixvin.php" method="post">
+        <input class="blanc" type="checkbox" name="choixVin" value="Blanc"> Blanc <br/>
+        <input class="petillant" type="checkbox" name="choixVin" value="Pétillant"> Pétillant <br/>
+        <input class="rose" type="checkbox" name="choixVin" value="Rosé"> Rosé <br/>
+        <input class="rouge" type="checkbox" name="choixVin" value="Rouge"> Rouge <br/>
+        <input type="submit">
+    </form>
+    <script
+    src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script>
+        $(function() { 
+            $('input[type="checkbox"]').bind('click',function() {
+                $('input[type="checkbox"]').not(this).prop("checked", false);
+            });
+            });
+        $("form").on("submit",function(e) {
+            e.preventDefault();
+            $.ajax({
+            method: "POST",
+            url: "choixvin.php",
+            data: { 'choixVin': $("input:checked").val()  }
+            })
+            .done(function( msg ) {
+               $("#vins").html(msg);
+            });
+        })
+       
+    </script>
+ 
   <div id="sidebar_content2"> <!-- Début de la div sidebar_content2 -->
         <h1 class="cru">SELECTIONNEZ UN CRU:</h1>
-            <a href="index.html">Rouge</a>
-            <a href="index.html">Gewurtzraminer</a>
-            <a href="index.html">Pinot</a>
-            <a href="index.html">Riesling</a>
+        
+        <div id="vins">
+           
+        </div>   
   </div> <!-- Fin de la div sidebar_content2 -->
+
+  
+
   <a href="page2.html"><button style="margin-left: -2%" class="button button5">Voir les Résultats</button></a>
 
 </div> <!-- Fin de la div sidenav -->
@@ -90,7 +119,8 @@
 </div> <!-- Fin de la div main -->
     <div class="titles"> <!-- Début de la div titles -->
             <h1>What With (my) Wine?</h1>
-            <P>WWW est un moteur qui recherche les meilleurs accords entre plats et vins et inversement entre vins et plats.</P>        
+            <P>WWW est un moteur de recherche qui sélectionne les meilleurs accords entre vins et plats.</p> <br>
+            <p>Cliquez sur l'une des vignettes de votre choix pour définir tout ou partie de vos filtres de recherche: et inversement entre vins et plats.</P>        
     </div> <!-- Fin de la div titles -->
         <div id="association"> <!-- Début de la div association -->
             <div id="ouvrir"> <!-- Début de la div ouvrir -->
