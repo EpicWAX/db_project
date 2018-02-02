@@ -57,9 +57,7 @@
         </div>   
   </div> <!-- Fin de la div sidebar_content2 -->
 
-  
-
-  <a href="page2.html"><button style="margin-left: -2%" class="button button5">Voir les Résultats</button></a>
+  <a href="page2.php?choixCru=1"><button style="margin-left: -2%" class="button button5">Voir les Résultats</button></a>
 
 </div> <!-- Fin de la div sidenav -->
 
