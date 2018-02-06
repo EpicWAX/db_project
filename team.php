@@ -16,10 +16,10 @@
 <div id="main"> <!-- Début de la div main -->
     <div id="navbar"> <!-- Début de la div navbar -->
         <div class="topnav"> <!-- Début de la div topnav -->
-            <a href="index.html" class="active"><img style="height: 17px;" src="Images/logoWWWwhite.png" alt="logo"></a>
-            <a href="team.html">Equipe</a>
-            <a href="contact.html">Contact</a>
-            <a href="about.html">About</a>
+            <a href="index.php" class="active"><img style="height: 17px;" src="Images/logoWWWwhite.png" alt="logo"></a>
+            <a href="team.php">Equipe</a>
+            <a href="contact.php">Contact</a>
+            <a href="about.php">About</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </div> <!-- Fin de la div topnav -->
     </div> <!-- Fin de la div navbar -->
